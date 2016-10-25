@@ -1,0 +1,104 @@
+<project buildenvironment="{067c869e-5bd9-4595-9f4c-60348133ad8e}" buildenvironmentname="uEnergy" executionenvironmentoption="XAP2+ P0 ELF DWARF BINUTILS UENERGYSDK" buildenvironmentoption="UENERGYSDK" executionenvironmentname="uEnergy" name="uEnergy" executionenvironment="{39e65239-59f4-4d78-b84a-26eaebfaa4de}" >
+ <folder name="C Files" >
+  <extension name="c" />
+  <file path="advertise.c" />
+  <file path="event_handler.c" />
+  <file path="i2c_comms.c" />
+  <file path="key_scan.c" />
+  <file path="motion.c" />
+  <file path="mouse.c" />
+  <file path="notifications.c" />
+  <file path="nvm_access.c" />
+  <file path="remote.c" />
+  <file path="remote_gatt.c" />
+  <file path="remote_hw.c" />
+  <file path="service_battery.c" />
+  <file path="service_csr_ota.c" />
+  <file path="service_gap.c" />
+  <file path="service_gatt.c" />
+  <file path="service_hid.c" />
+  <file path="state.c" />
+ </folder>
+ <folder name="Header Files" >
+  <extension name="h" />
+  <file path="advertise.h" />
+  <file path="appearance.h" />
+  <file path="app_gatt.h" />
+  <file path="configuration.h" />
+  <file path="event_handler.h" />
+  <file path="gap_conn_params.h" />
+  <file path="hid_descriptor.h" />
+  <file path="hid_ota.h" />
+  <file path="i2c_comms.h" />
+  <file path="irdb.h" />
+  <file path="key_scan.h" />
+  <file path="motion.h" />
+  <file path="mouse.h" />
+  <file path="notifications.h" />
+  <file path="nvm_access.h" />
+  <file path="remote.h" />
+  <file path="remote_gatt.h" />
+  <file path="remote_hw.h" />
+  <file path="service_battery.h" />
+  <file path="service_csr_ota.h" />
+  <file path="service_gap.h" />
+  <file path="service_gatt.h" />
+  <file path="service_hid.h" />
+  <file path="state.h" />
+  <file path="uuids_battery.h" />
+  <file path="uuids_csr_ota.h" />
+  <file path="uuids_dev_info.h" />
+  <file path="uuids_gap.h" />
+  <file path="uuids_gatt.h" />
+  <file path="uuids_hid.h" />
+  <file path="uuids_scan_params.h" />
+ </folder>
+ <folder name="Assembler Files" >
+  <extension name="asm" />
+  <file path="pio_ctrlr_code.asm" />
+ </folder>
+ <folder name="GATT db files" >
+  <extension name="db" />
+  <file path="app_gatt_db.db" />
+  <file path="service_battery_db.db" />
+  <file path="service_csr_ota_db.db" />
+  <file path="service_dev_info_db.db" />
+  <file path="service_gap_db.db" />
+  <file path="service_gatt_db.db" />
+  <file path="service_hid_db.db" />
+ </folder>
+ <file path="remote_csr101x_A05.keyr" />
+ <file path="otau_bootloader.keyr" />
+ <file path="remote_csr_100x.keyr" />
+ <properties currentconfiguration="Release" >
+  <configuration name="Debug" >
+   <property key="csr100x_keyr" >remote_csr_100x.keyr</property>
+   <property key="csr101x_a05_keyr" >remote_csr101x_A05.keyr</property>
+   <property key="debugtransport" >[SPITRANS=USB SPIPORT=0]</property>
+   <property key="defines" ></property>
+   <property key="libpaths" >D:\Documents\Downloads\Generator\54219_Generator\Generator/remote_20161021_092942 D:\Documents\Downloads\Generator\54219_Generator\Generator/remote_20161021_092942\lib</property>
+   <property key="libs" ></property>
+   <property key="otau_bootloader" >1</property>
+   <property key="otau_keyr" >otau_bootloader.keyr</property>
+   <property key="otau_name" >BL</property>
+   <property key="otau_secret" ></property>
+   <property key="output" ></property>
+  </configuration>
+  <configuration name="Release" >
+   <property key="csr100x_keyr" >remote_csr_100x.keyr</property>
+   <property key="csr101x_a05_keyr" >remote_csr101x_A05.keyr</property>
+   <property key="debugtransport" >[SPITRANS=USB SPIPORT=0]</property>
+   <property key="defines" ></property>
+   <property key="libpaths" >D:\Documents\Downloads\Generator\54219_Generator\Generator/remote_20161021_092942 D:\Documents\Downloads\Generator\54219_Generator\Generator/remote_20161021_092942\lib</property>
+   <property key="libs" ></property>
+   <property key="otau_bootloader" >1</property>
+   <property key="otau_keyr" >otau_bootloader.keyr</property>
+   <property key="otau_name" >BL</property>
+   <property key="otau_secret" ></property>
+   <property key="otau_slot_1" >0x7000</property>
+   <property key="otau_slot_end" >0x1ffff</property>
+   <property key="otau_version" >1</property>
+   <property key="output" ></property>
+  </configuration>
+ </properties>
+</project>

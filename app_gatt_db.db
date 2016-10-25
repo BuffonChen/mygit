@@ -1,0 +1,27 @@
+/******************************************************************************
+ *    Copyright (C) Cambridge Silicon Radio Limited 2013
+ *
+ * FILE
+ *    app_gatt_db.db
+ *
+ *  DESCRIPTION
+ *    This file defines the GATT database for this application.
+ *
+ *****************************************************************************/
+
+/* Include the database files of all the services which will be used by the
+ * application. The uEnergy SDK creates the GATT database using this db file.
+ */
+/* The GATT service MUST be included first when 
+ * CSR Over-the-Air Update is supported 
+ */
+#include "service_gatt_db.db"
+
+/* Include other services here */
+
+#include "service_csr_ota_db.db"
+
+#include "service_gap_db.db"
+#include "service_hid_db.db"
+#include "service_battery_db.db"  
+#include "service_dev_info_db.db"

@@ -1,0 +1,43 @@
+/*******************************************************************************
+ *    Copyright (C) Cambridge Silicon Radio Limited 2013
+ *
+ * FILE
+ *    service_gatt_db.db
+ *
+ * DESCRIPTION
+ *    service specific database file containing all the attributes: services,
+ *    charcters and descriptors etc
+ *
+ * NOTES
+ *    Support for the SERVICE CHANGED characteristic is mandatory when
+ *    CSR Over-the-Air update is supported.
+ ******************************************************************************/
+
+#include "uuids_gatt.h"
+
+/* All the names will be used in corresponding generated handle names */
+
+/* For service details, refer http://developer.bluetooth.org/gatt/services/
+ * Pages/ServiceViewer.aspx?u=org.bluetooth.service.generic_attribute.xml.
+ */
+
+/* Primary service declaration of GATT service. */   
+primary_service {
+    uuid : UUID_GATT_SERVICE,
+    name : "GATT_SERVICE",
+    
+    characteristic {
+        uuid : UUID_SERVICE_CHANGED,
+        name : "SERVICE_CHANGED",
+        properties : [read, indicate],
+        value : [0x05, 0xffff], /* This GATT service occupies the first 5 handles */
+        
+        client_config {
+                    flags : [FLAG_IRQ],
+                    name : "SERVICE_CHANGED_CLIENT_CONFIG"
+                }
+    }
+    
+},  /* This comma to be added only if there are more .db files included after 
+     * this in app_gatt_db.db
+     */

@@ -1,0 +1,19 @@
+#SDK OUTPUT
+depend_Release_CSR101x_A05/
+#XAP
+*.elf
+#CONFIGURATION
+flag.configuration
+#makefile
+*.mak
+#Source Insight
+*.IAB
+*.IAD
+*.IMB
+*.IMD
+*.PFI
+*.PO
+*.DB3
+*.PS
+*.CF3
+*.PR

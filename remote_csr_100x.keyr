@@ -1,0 +1,29 @@
+>DECIMAL_CS_VERSION=78
+
+// (0001) - Bluetooth device address
+&BDADDR = aacc 5b00 0002
+
+// (0002) - Crystal frequency trim
+&CRYSTAL_FTRIM = 0015
+
+// (0005) - UART Speed
+// &UART_RATE = 12c0
+
+// (000a) - Watchdog timeout
+&WD_TIMEOUT = 7530
+
+// (000b) - Watchdog period (15 seconds).
+// The application relies on this being 15 seconds, so don't change it!
+&WD_PERIOD = 3a98
+
+// (000c) - Sleep mode (0/1/2 -> never/deep/shallow)
+&SLEEP_MODE = 0001
+
+// (0017) - NVM Start Address
+// !! Do not set a lower address than 0xf7ff !!
+// For applications supporting OTA-update, the application NVM must be set to
+// 0xf7ff or higher.
+&NVM_START_ADDRESS = f7ff
+
+// (0018) - NVM Size
+&NVM_SIZE = 0080

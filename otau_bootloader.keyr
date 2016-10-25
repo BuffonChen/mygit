@@ -1,0 +1,12 @@
+>DECIMAL_CS_VERSION=67
+
+///////////////////////////////////////////////////////////
+// This file is used to configure the OTAU bootloader.   //
+// See "Over-the-Air Update Technical Overview" in the   //
+// Support Documentation for instructions on how to      //
+// configure the bootloader with the USER_KEYS CS key.   //
+///////////////////////////////////////////////////////////
+
+// (0004) - User keys
+&USER_KEYS = 0004 0001 1e12 1e5a 0001 0069 004a 0000
+
